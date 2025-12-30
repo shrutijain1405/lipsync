@@ -76,16 +76,16 @@ Results are stored in `benchmark_pipelines.csv`.
 
 
 ### Sample Video 1 — Wav2Lip
-<video src="https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_wav2lip.mp4" controls width="480"></video>
+[![Wav2Lip Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_wav2lip_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_wav2lip.mp4)
 
 ### Sample Video 1 — LatentSync
-<video src="https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync.mp4" controls width="480"></video>
+[![LatentSync Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync.mp4)
 
-### Sample Video 2 — Wav2Lip
-<video src="https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip.mp4" controls width="480"></video>
+### Sample Video 1 — Wav2Lip
+[![Wav2Lip Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip.mp4)
 
-### Sample Video 2 — LatentSync
-<video src="https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync.mp4" controls width="480"></video>
+### Sample Video 1 — LatentSync
+[![LatentSync Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync.mp4)
 
 
 ---
@@ -94,7 +94,7 @@ Results are stored in `benchmark_pipelines.csv`.
 
 MuseTalk was explored but discarded due to poor preservation of facial attributes (e.g. moustache).
 
-<video src="https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_wav2lip.mp4" controls width="480"></video>
+[![Wav2Lip Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk.mp4)
 
 ---
 

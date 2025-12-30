@@ -69,18 +69,52 @@ Results are stored in `benchmark_pipelines.csv`.
 
 ## 7. Qualitative Results
 
-| Wav2Lip | LatentSync |
+<!-- | Wav2Lip | LatentSync |
 |--------|------------|
 | ![](outputs/output_video_yt1_wav2lip.mp4) | ![](outputs/output_video_yt1_latentSync.mp4) |
-| ![](outputs/output_video_yt2_wav2lip.mp4) | ![](outputs/output_video_yt2_latentSync.mp4) |
+| ![](outputs/output_video_yt2_wav2lip.mp4) | ![](outputs/output_video_yt2_latentSync.mp4) | -->
+
+### Sample Video 1
+
+<table>
+  <tr>
+    <th>Wav2Lip</th>
+    <th>LatentSync</th>
+  </tr>
+  <tr>
+    <td>
+      <video src="outputs/output_video_yt1_wav2lip.mp4" controls width="320"></video>
+    </td>
+    <td>
+      <video src="outputs/output_video_yt1_latentSync.mp4" controls width="320"></video>
+    </td>
+  </tr>
+</table>
+
+### Sample Video 2
+
+<table>
+  <tr>
+    <th>Wav2Lip</th>
+    <th>LatentSync</th>
+  </tr>
+  <tr>
+    <td>
+      <video src="outputs/output_video_yt2_wav2lip.mp4" controls width="320"></video>
+    </td>
+    <td>
+      <video src="outputs/output_video_yt2_latentSync.mp4" controls width="320"></video>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 8. MuseTalk (Not Used)
+## 8. MuseTalk (explored, but not used)
 
 MuseTalk was explored but discarded due to poor preservation of facial attributes (e.g. moustache).
 
-![](outputs/output_video_yt1_museTalk.mp4)
+<video src="outputs/output_video_yt1_museTalk.mp4" controls width="480"></video>
 
 ---
 

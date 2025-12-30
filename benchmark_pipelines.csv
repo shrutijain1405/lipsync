@@ -1,0 +1,13 @@
+pipeline,gpu,sample,video,audio,time_sec
+wav2lip,A100,1,inputs/input_video_yt1.mp4,inputs/input_audio_yt1.wav,139.762971605
+wav2lip,A100,2,inputs/input_video_yt2.mp4,inputs/input_audio_yt2.wav,112.194928355
+wav2lip,L4,1,inputs/input_video_yt1.mp4,inputs/input_audio_yt1.wav,204.772030337
+wav2lip,L4,2,inputs/input_video_yt2.mp4,inputs/input_audio_yt2.wav,163.878505335
+wav2lip,H100,1,inputs/input_video_yt1.mp4,inputs/input_audio_yt1.wav,110.218845783
+wav2lip,H100,2,inputs/input_video_yt2.mp4,inputs/input_audio_yt2.wav,91.008570289
+latentSync,A100,1,inputs/input_video_yt1.mp4,inputs/input_audio_yt1.wav,623.281463894
+latentSync,A100,2,inputs/input_video_yt2.mp4,inputs/input_audio_yt2.wav,522.947403718
+latentSync,L4,1,inputs/input_video_yt1.mp4,inputs/input_audio_yt1.wav,2080.274356329
+latentSync,L4,2,inputs/input_video_yt2.mp4,inputs/input_audio_yt2.wav,1770.150847463
+latentSync,H100,1,inputs/input_video_yt1.mp4,inputs/input_audio_yt1.wav,405.036557948
+latentSync,H100,2,inputs/input_video_yt2.mp4,inputs/input_audio_yt2.wav,338.582204388

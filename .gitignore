@@ -1,0 +1,5 @@
+Wav2Lip/
+LatentSync/
+__pycache__/
+*.pyc
+.env

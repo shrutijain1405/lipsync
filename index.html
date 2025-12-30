@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LipSync UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    input {
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    table {
+      margin-top: 30px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Upload Video & Audio</h2>
+
+<input type="file" id="videoInput" accept="video/*" />
+<input type="file" id="audioInput" accept="audio/*" />
+<button onclick="submitJob()">Submit</button>
+
+<table id="jobsTable">
+  <thead>
+    <tr>
+      <th>Job ID</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+  const BASE_URL = "https://spjain--lipsync-modalapp-fastapi-app.modal.run";
+
+  function submitJob() {
+    const video = document.getElementById("videoInput").files[0];
+    const audio = document.getElementById("audioInput").files[0];
+
+    if (!video || !audio) {
+      alert("Please select both video and audio files.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("video", video);
+    formData.append("audio", audio); 
+
+    fetch(`${BASE_URL}/submit`, {
+      method: "POST",
+      body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+      addJobRow(data.jobId);
+    })
+    .catch(err => {
+      console.error(err);
+      alert("Failed to submit job");
+    });
+  }
+
+  function addJobRow(jobId) {
+    const tbody = document.querySelector("#jobsTable tbody");
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${jobId}</td>
+      <td id="status-${jobId}">PENDING</td>
+      <td>
+        <button onclick="checkStatus('${jobId}')">Check Status</button>
+        <button id="download-${jobId}" disabled onclick="downloadResult('${jobId}')">
+          Download
+        </button>
+      </td>
+    `;
+
+    tbody.appendChild(row);
+  }
+
+  function checkStatus(jobId) {
+    fetch(`${BASE_URL}/status/${jobId}`)
+      .then(res => res.json())
+      .then(data => {
+        const statusCell = document.getElementById(`status-${jobId}`);
+        const downloadBtn = document.getElementById(`download-${jobId}`);
+
+        statusCell.innerText = data.status;
+
+        if (data.status === "completed") {
+          downloadBtn.disabled = false;
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        alert("Failed to get status");
+      });
+  }
+
+  function downloadResult(jobId) {
+    window.location.href = `${BASE_URL}/result/${jobId}`;
+  }
+</script>
+
+</body>
+</html>

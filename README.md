@@ -83,10 +83,10 @@ Results are stored in `benchmark_pipelines.csv`.
   </tr>
   <tr>
     <td>
-      <video src="outputs/output_video_yt1_wav2lip.mp4" controls width="320"></video>
+      <video src="https://github.com/shrutijain1405/lipsync/blob/main/outputs/output_video_yt1_wav2lip.mp4" controls width="320"></video>
     </td>
     <td>
-      <video src="outputs/output_video_yt1_latentSync.mp4" controls width="320"></video>
+      <video src="https://github.com/shrutijain1405/lipsync/blob/main/outputs/output_video_yt1_latentSync.mp4" controls width="320"></video>
     </td>
   </tr>
 </table>
@@ -100,10 +100,10 @@ Results are stored in `benchmark_pipelines.csv`.
   </tr>
   <tr>
     <td>
-      <video src="outputs/output_video_yt2_wav2lip.mp4" controls width="320"></video>
+      <video src="https://github.com/shrutijain1405/lipsync/blob/main/outputs/output_video_yt2_wav2lip.mp4" controls width="320"></video>
     </td>
     <td>
-      <video src="outputs/output_video_yt2_latentSync.mp4" controls width="320"></video>
+      <video src="https://github.com/shrutijain1405/lipsync/blob/main/outputs/output_video_yt2_latentSync.mp4" controls width="320"></video>
     </td>
   </tr>
 </table>
@@ -114,7 +114,7 @@ Results are stored in `benchmark_pipelines.csv`.
 
 MuseTalk was explored but discarded due to poor preservation of facial attributes (e.g. moustache).
 
-<video src="outputs/output_video_yt1_museTalk.mp4" controls width="480"></video>
+<video src="ohttps://github.com/shrutijain1405/lipsync/blob/main/utputs/output_video_yt1_museTalk.mp4" controls width="480"></video>
 
 ---
 

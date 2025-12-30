@@ -2,9 +2,17 @@
 
 This is a web-based lip-synchronization service using FastAPI, deployed on Modal. This service accepts a video file and a separate audio file as inputs and generates a new video that is lipsynced to the audio file.
 
-We do this by using LatentSync model but we also support Wav2Lip.
+We do this by using **LatentSync** model but we also support Wav2Lip.
 
 We also provide a script to benchmark the runtimes of both LatentSync and Wav2Lip on different GPUs. 
+
+---
+
+## Why LatentSync?
+
+- Sharper image of the lip area - diffusion based model
+- Better syncing
+- Near real-time video generation (10 mins for a 1 min video)
 
 ---
 
@@ -33,7 +41,7 @@ clone the **modified versions** of Wav2Lip and LatentSync.
 
 ```bash
 git clone https://github.com/shrutijain1405/LatentSync.git
-git clone https://github.com/shrutijain1405/LatentSync.git
+git clone https://github.com/shrutijain1405/Wav2Lip.git
 ```
 ---
 

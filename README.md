@@ -90,10 +90,10 @@ Results are stored in `benchmark_pipelines.csv`.
 [![LatentSync Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync.mp4)
 
 ### Sample Video 1 — Wav2Lip
-[![Wav2Lip Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip.mp4)
+[![Wav2Lip Video 2](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip.mp4)
 
 ### Sample Video 1 — LatentSync
-[![LatentSync Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync.mp4)
+[![LatentSync Video 2](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync.mp4)
 
 
 ---
@@ -102,7 +102,7 @@ Results are stored in `benchmark_pipelines.csv`.
 
 MuseTalk was explored but discarded due to poor preservation of facial attributes (e.g. moustache).
 
-[![Wav2Lip Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk.mp4)
+[![MuseTalk Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk.mp4)
 
 ---
 

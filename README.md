@@ -75,35 +75,26 @@ Results are stored in `benchmark_pipelines.csv`.
 
 ---
 
-## 7. Qualitative Results
-
-<!-- | Wav2Lip | LatentSync |
-|--------|------------|
-| ![](outputs/output_video_yt1_wav2lip.mp4) | ![](outputs/output_video_yt1_latentSync.mp4) |
-| ![](outputs/output_video_yt2_wav2lip.mp4) | ![](outputs/output_video_yt2_latentSync.mp4) | -->
-
-
-### Sample Video 1 — Wav2Lip
-
-https://github.com/user-attachments/assets/6668d3e5-3895-4187-8594-341851e9efd6
-
-### Sample Video 1 — LatentSync
+## 7. Qualitative Results of LatentSync
 
 https://github.com/user-attachments/assets/1b4dba80-54cb-4fb4-b271-79a3ce570fe8
 
-### Sample Video 2 — Wav2Lip
+https://github.com/user-attachments/assets/f3353001-20a4-41d1-aa67-5c572f426c11
+
+## 8. Other models
+
+### Wav2Lip
+
+Wav2Lip blurs the region near the lip, the blending of the lip reagion is not smooth (sometimes bounding box is visible) and unwanted artifacts can be seen
+
+https://github.com/user-attachments/assets/6668d3e5-3895-4187-8594-341851e9efd6
 
 https://github.com/user-attachments/assets/20a1b01d-525b-4ee9-8b60-1388e9f2ad3c
 
-### Sample Video 2 — LatentSync
 
-https://github.com/user-attachments/assets/f3353001-20a4-41d1-aa67-5c572f426c11
+### MuseTalk
 
----
-
-## 8. MuseTalk (explored, but not used)
-
-MuseTalk was explored but discarded due to poor preservation of facial attributes (e.g. moustache).
+MuseTalk has poor preservation of facial attributes (e.g. moustache).
 
 https://github.com/user-attachments/assets/e8656aff-7e0d-48d9-b56b-3b3691301e3b
 

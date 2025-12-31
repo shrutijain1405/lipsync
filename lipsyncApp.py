@@ -163,8 +163,8 @@ def runLipsync(jobId: str, videoPath: str, audioPath: str):
         
         outputPath = outputPath = f"/data/{jobId}/output_video.mp4"
         
-        # getLipSyncedVideoLatentSync(videoPath, audioPath, outputPath)
-        getLipSyncedVideoWav2Lip(videoPath,audioPath,outputPath,jobId)
+        getLipSyncedVideoLatentSync(videoPath, audioPath, outputPath)
+        # getLipSyncedVideoWav2Lip(videoPath,audioPath,outputPath,jobId)
         
         jobStore.setJobStatus(jobId, JobStatus.COMPLETED)
 

@@ -2,7 +2,7 @@
 
 This is a web-based lip-synchronization service using FastAPI, deployed on Modal. This service accepts a video file and a separate audio file as inputs and generates a new video that is lipsynced to the audio file.
 
-We do this by using **LatentSync** model but we also support Wav2Lip.
+We do this by using the **LatentSync** model but we also support Wav2Lip.
 
 We also provide a script to benchmark the runtimes of both LatentSync and Wav2Lip on different GPUs. 
 
@@ -89,10 +89,10 @@ Results are stored in `benchmark_pipelines.csv`.
 ### Sample Video 1 — LatentSync
 [![LatentSync Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync.mp4)
 
-### Sample Video 1 — Wav2Lip
+### Sample Video 2 — Wav2Lip
 [![Wav2Lip Video 2](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip.mp4)
 
-### Sample Video 1 — LatentSync
+### Sample Video 2 — LatentSync
 [![LatentSync Video 2](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync.mp4)
 
 

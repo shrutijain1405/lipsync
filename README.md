@@ -85,7 +85,7 @@ https://github.com/user-attachments/assets/f3353001-20a4-41d1-aa67-5c572f426c11
 
 ### Wav2Lip
 
-Wav2Lip blurs the region near the lip, the blending of the lip reagion is not smooth (sometimes bounding box is visible) and unwanted artifacts can be seen
+Wav2Lip blurs the region near the lip, the blending of the lip region is not smooth (in some frames bounding box is visible) and unwanted artifacts can be seen
 
 https://github.com/user-attachments/assets/6668d3e5-3895-4187-8594-341851e9efd6
 

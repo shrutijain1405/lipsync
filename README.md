@@ -12,7 +12,7 @@ We also provide a script to benchmark the runtimes of both LatentSync and Wav2Li
 
 - Sharper image of the lip area - diffusion based model
 - Better syncing
-- Near real-time video generation (10 mins for a 1 min video)
+- Near real-time video generation (8 mins for a 1 min video)
 
 ---
 
@@ -84,17 +84,20 @@ Results are stored in `benchmark_pipelines.csv`.
 
 
 ### Sample Video 1 — Wav2Lip
-[![Wav2Lip Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_wav2lip_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_wav2lip.mp4)
+
+https://github.com/user-attachments/assets/6668d3e5-3895-4187-8594-341851e9efd6
 
 ### Sample Video 1 — LatentSync
-[![LatentSync Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_latentSync.mp4)
+
+https://github.com/user-attachments/assets/1b4dba80-54cb-4fb4-b271-79a3ce570fe8
 
 ### Sample Video 2 — Wav2Lip
-[![Wav2Lip Video 2](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_wav2lip.mp4)
+
+https://github.com/user-attachments/assets/20a1b01d-525b-4ee9-8b60-1388e9f2ad3c
 
 ### Sample Video 2 — LatentSync
-[![LatentSync Video 2](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt2_latentSync.mp4)
 
+https://github.com/user-attachments/assets/f3353001-20a4-41d1-aa67-5c572f426c11
 
 ---
 
@@ -102,7 +105,7 @@ Results are stored in `benchmark_pipelines.csv`.
 
 MuseTalk was explored but discarded due to poor preservation of facial attributes (e.g. moustache).
 
-[![MuseTalk Video 1](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk_thumbnail.png)](https://raw.githubusercontent.com/shrutijain1405/lipsync/main/outputs/output_video_yt1_museTalk.mp4)
+https://github.com/user-attachments/assets/e8656aff-7e0d-48d9-b56b-3b3691301e3b
 
 ---
 

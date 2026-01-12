@@ -6,6 +6,8 @@ We do this by using the **LatentSync** model but we also support Wav2Lip.
 
 We also provide a script to benchmark the runtimes of both LatentSync and Wav2Lip on different GPUs. 
 
+You can find my slides here: https://docs.google.com/presentation/d/19HnPf5GJuIK7sEFEZvO3fmb3Vb794zFoW9JlxAxQfCM/edit?usp=sharing
+
 ---
 
 ## Why LatentSync?

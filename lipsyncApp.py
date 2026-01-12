@@ -147,7 +147,7 @@ def benchmark_L4(video, audio, output_path, pipeline):
     gpu="A100",      
     timeout=2000
 )
-def runLipsync(jobId: str, videoPath: str, audioPath: str):
+def runLipsync(jobId: str, videoPath: str, audioPath: str, mode: str):
     from jobStore import JobStore
     from jobStatus import JobStatus
     jobStore = JobStore()
@@ -162,9 +162,10 @@ def runLipsync(jobId: str, videoPath: str, audioPath: str):
             raise FileNotFoundError(f"Audio not found: {audioPath}")
         
         outputPath = outputPath = f"/data/{jobId}/output_video.mp4"
-        
-        getLipSyncedVideoLatentSync(videoPath, audioPath, outputPath)
-        # getLipSyncedVideoWav2Lip(videoPath,audioPath,outputPath,jobId)
+        if(mode == 'latentSync'):
+            getLipSyncedVideoLatentSync(videoPath, audioPath, outputPath)
+        if(mode == 'wav2lip'):
+            getLipSyncedVideoWav2Lip(videoPath,audioPath,outputPath, jobId)
         
         jobStore.setJobStatus(jobId, JobStatus.COMPLETED)
 
@@ -178,7 +179,7 @@ def runLipsync(jobId: str, videoPath: str, audioPath: str):
 @modal.asgi_app()
 def fastapi_app():
 
-    from fastapi import FastAPI, UploadFile, File
+    from fastapi import FastAPI, UploadFile, File, Form
     from fastapi.responses import FileResponse
     from fastapi.middleware.cors import CORSMiddleware
     from jobStore import JobStore
@@ -196,7 +197,8 @@ def fastapi_app():
     @webApp.post("/submit")
     async def submitJob(
         video: UploadFile = File(...),
-        audio: UploadFile = File(...)
+        audio: UploadFile = File(...),
+        mode: str = Form(...)
     ):
         import uuid
 
@@ -217,7 +219,7 @@ def fastapi_app():
 
         volume.commit()
         
-        runLipsync.spawn(jobId, video_path, audio_path)
+        runLipsync.spawn(jobId, video_path, audio_path, mode)
 
         return {"jobId": jobId}
 

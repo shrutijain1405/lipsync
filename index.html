@@ -50,7 +50,9 @@
 
 <input type="file" id="videoInput" accept="video/*" />
 <input type="file" id="audioInput" accept="audio/*" />
-<button onclick="submitJob()">Submit</button>
+<button onclick="submitJob('latentSync')">Submit LatentSync</button>
+<button onclick="submitJob('wav2lip')">Submit Wav2Lip</button>
+
 
 <table id="jobsTable">
   <thead>
@@ -66,7 +68,7 @@
 <script>
   const BASE_URL = "https://spjain--lipsync-modalapp-fastapi-app.modal.run";
 
-  function submitJob() {
+  function submitJob(mode) {
     const video = document.getElementById("videoInput").files[0];
     const audio = document.getElementById("audioInput").files[0];
 
@@ -78,6 +80,7 @@
     const formData = new FormData();
     formData.append("video", video);
     formData.append("audio", audio); 
+    formData.append("mode", mode);
 
     fetch(`${BASE_URL}/submit`, {
       method: "POST",
